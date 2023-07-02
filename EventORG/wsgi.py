@@ -15,3 +15,5 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'EventORG.settings')
 
 application = get_wsgi_application()
 app = application
+
+WSGI_APPLICATION = 'vercel_app.wsgi.app'
