@@ -1,0 +1,26 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>title: {{event.title}}</title>
+</head>
+<body>
+    {% if isActivated %}
+    <div class="container">
+        <div class="title">Title: {{event.title}}</div>
+        <div class="description">description: {{event.description}}</div>
+    </div>
+    {% endif %}
+    <br><br>
+    <div>please select option from below</div>
+    {% include 'allEvents.html' %}
+   
+
+
+     
+</body>
+</html>
